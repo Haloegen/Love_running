@@ -5,24 +5,26 @@
     padding: 0;
     border: none;
 }
- 
+
 
 body {
     font-family: Lato, sans-serif;
     font-weight: 300;
-    color:#3a3a3a;
+    color: #3a3a3a;
 }
 
 /* headings and logos */
 
-h1, h2 {
-font-family: Oswald, sans-serif;
-text-transform: uppercase;
-letter-spacing: 4px;
-color: #252525;
+h1,
+h2 {
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #252525;
 }
 
-#menu, #logo {
+#menu,
+#logo {
     line-height: 75px;
 }
 
@@ -56,7 +58,7 @@ color: #252525;
     border-bottom: 1px solid #3a3a3a;
 }
 
-/* hero image */ 
+/* hero image */
 
 #hero-outer {
     height: 600px;
@@ -64,8 +66,9 @@ color: #252525;
     overflow: hidden;
     position: relative;
 }
- 
-#cover-text, #cover-text h2 {
+
+#cover-text,
+#cover-text h2 {
     color: #fff;
 }
 
@@ -75,9 +78,9 @@ color: #252525;
     background: url('../images/hero-image.webp') no-repeat center center;
 
     /* animates zoom effect on loading page */
-        animation-name: hero-zoom;
-        animation-duration: 5s;
-        animation-fill-mode: forwards;
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
 
 }
 
@@ -86,10 +89,11 @@ color: #252525;
 
 @keyframes hero-zoom {
     from {
-transform: scale(1);
+        transform: scale(1);
     }
+
     to {
-transform: scale(1.1);
+        transform: scale(1.1);
     }
 }
 
@@ -105,7 +109,7 @@ transform: scale(1.1);
     padding-top: 40px;
     padding-left: 10px;
 
-    background-color: rgba(241,109,107,.7);
+    background-color: rgba(241, 109, 107, .7);
     bottom: 30px;
     right: 150px;
 
@@ -115,21 +119,19 @@ transform: scale(1.1);
 /* club ethos */
 
 #club-ethos {
-    height: 600px; 
+    height: 600px;
 }
 
 #left-about {
     padding-top: 30px;
     width: 33%;
     float: left;
-    background-color: blue;
 }
 
 #right-about {
     padding-top: 30px;
     width: 33%;
     float: right;
-    background-color: silver;
 }
 
 #center-about {
@@ -137,4 +139,34 @@ transform: scale(1.1);
     width: 33%;
     margin: 0 auto;
     background-color: green;
+}
+
+hr {
+    border-top: 1px solid #3a3a3a;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.left-about-heading {
+    width: 60%;
+    float: right;
+    line-height: 20px;
+    clear: both;
+    margin-bottom: 50px;
+}
+
+.right-about-heading {
+    width: 60%;
+    float: left;
+    line-height: 20px;
+    clear: both;
+    margin-bottom: 50px;
+}
+
+.right-about-heading h2 {
+    text-align: right;
+}
+
+.right-about-heading p {
+    text-align: right;
 }
